@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://www.coi.cz/favicon.ico">
+    <title>Rizikový web</title>
+    <script src="emptypagescript.js"></script>
+    <style>
+
+      body{
+        background-color:#34445e;
+      }
+
+      #centered{
+        vertical-align: middle;
+        text-align: center;
+        margin: 2% auto; 
+        max-width: 700px;
+        color: white;
+      }
+
+      #reason{
+        text-align: left;
+      }
+
+      #buttonholder{
+        text-align: center;
+      }
+
+      button {
+        background-color: #4CAF50; /* Green */
+        border: 3px solid black;
+        border-radius: 5px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 34px;
+        margin-top: 20px; 
+        cursor: pointer;
+      }
+
+      h1 {
+        color: red;
+      }
+
+      a{
+        /* text-decoration: none; */
+        color: white;
+        /* font-weight: bold; */
+        font-style: italic;
+      }
+
+      #page_url{
+        font-style: italic;
+      }
+
+      .bigText{
+        font-size: 30px;
+      }
+      .smallText{
+        font-size: 20px;
+      }
+
+    </style>
+    
+  </head>
+  <body>
+    <div id="centered" class="bigText">
+      <h1>Upozornění !</h1>
+      <p>Internetová stránka<span id="page_url"></span>, na&nbspkterou jste se pokoušeli dostat, byla označena Českou obchodní inspekcí jako riziková. Z&nbspbezpečnostních důvodů jste byli přesměrováni na tuto varovnou stránku.</p>
+      <p>Více informací na stránkách <a id="coi_link" href="https://www.coi.cz/pro-spotrebitele/rizikove-e-shopy/">České obchodní inspekce</a>.</p>
+      <div id="reason" class="smallText">
+        <div id="error_message"></div>
+        <p id="reason_text_1" class="bigText"></p>
+        <div id="bad_pages"></div>
+        <p id="reason_text_2" class="bigText"></p>
+        <div id="info"></span>
+      </div>
+      <div id="buttonholder">
+        <button id="button">Vrátit se zpět</button>
+      </div>
+    </div>
+    </body>
+  </html>

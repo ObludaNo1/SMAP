@@ -1,0 +1,17 @@
+{
+    "name": "Ochrana před rizikovými weby",
+    "version": "0.1",
+    "manifest_version": 2,
+    "permissions": [
+        "storage", "alarms",
+        "webRequest", "webRequestBlocking",
+        "activeTab", "tabs",
+        "*://*/*"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "web_accessible_resources": [
+        "rizikovyweb.html"
+    ]
+}
